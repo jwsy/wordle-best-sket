@@ -4441,6 +4441,7 @@ const dictionary = [
   "daurs",
   "dauts",
   "daven",
+  "david",
   "davit",
   "dawah",
   "dawds",
@@ -15468,6 +15469,13 @@ function checkWinLose(guess, tiles) {
     return
   }
 
+  if (guess === 'david') {
+    // showAlert("You Win", 5000)
+    showAlert("Best at SKET lead, not at Wordle 🧐", 10000)
+    danceTiles(tiles)
+    return
+  }
+  
   if (guess === 'bryan') {
     // showAlert("You Win", 5000)
     showAlert("Nope 🥈! Go back to 2021! 😂", 10000)
