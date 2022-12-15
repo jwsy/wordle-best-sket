@@ -15469,16 +15469,23 @@ function checkWinLose(guess, tiles) {
     return
   }
 
+  if (guess === 'sarah') {
+    // showAlert("You Win", 5000)
+    showAlert("🐐", 15000)
+    danceTiles(tiles)
+    return
+  }
+
   if (guess === 'david') {
     // showAlert("You Win", 5000)
-    showAlert("Best at SKET lead, not at Wordle 🧐", 10000)
+    showAlert("Best at SKET lead, not at Wordle 🧐", 15000)
     danceTiles(tiles)
     return
   }
   
   if (guess === 'bryan') {
     // showAlert("You Win", 5000)
-    showAlert("Nope 🥈! Go back to 2021! 😂", 10000)
+    showAlert("Nope 🥈! Go back to 2021! 😂", 15000)
     danceTiles(tiles)
     return
   }

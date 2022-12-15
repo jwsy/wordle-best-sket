@@ -5,7 +5,7 @@
 
 body {
   background-color: hsl(240, 3%, 7%);
-  display: flex;
+  display: inline;
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
@@ -14,18 +14,20 @@ body {
 }
 
 .aloha {
+    /* margin-top: 5em; */
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     color: palevioletred;
-    font-size: 1.2em;
+    font-size: 2em;
 }
 
 .keyboard {
   display: grid;
   grid-template-columns: repeat(20, minmax(auto, 1.25em));
   grid-auto-rows: 3em;
-  gap: .25em;
+  gap: .35em;
   justify-content: center;
 }
 
