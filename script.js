@@ -3537,6 +3537,7 @@ const dictionary = [
   "brusk",
   "brust",
   "bruts",
+  "bryan",
   "buats",
   "buaze",
   "bubal",
@@ -6816,6 +6817,7 @@ const dictionary = [
   "jinne",
   "jinni",
   "jinns",
+  "jinny",
   "jirds",
   "jirga",
   "jirre",
@@ -15300,7 +15302,7 @@ const offsetFromDate = new Date(2022, 0, 1)
 const msOffset = Date.now() - offsetFromDate
 const dayOffset = msOffset / 1000 / 60 / 60 / 24
 // const targetWord = targetWords[Math.floor(dayOffset)]
-const targetWord = "smore"
+const targetWord = "jinny"
 
 startInteraction()
 
@@ -15460,9 +15462,16 @@ function shakeTiles(tiles) {
 function checkWinLose(guess, tiles) {
   if (guess === targetWord) {
     // showAlert("You Win", 5000)
-    showAlert("I'll take two boxes of smores pls 📦", 50000)
+    showAlert("You win!", 50000)
     danceTiles(tiles)
     stopInteraction()
+    return
+  }
+
+  if (guess === 'bryan') {
+    // showAlert("You Win", 5000)
+    showAlert("Nope 🥈! Go back to 2021! 😂", 10000)
+    danceTiles(tiles)
     return
   }
 
