@@ -10230,6 +10230,7 @@ const dictionary = [
   "sapan",
   "sapid",
   "sapor",
+  "sarah",
   "saran",
   "sards",
   "sared",
